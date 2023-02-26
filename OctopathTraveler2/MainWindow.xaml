@@ -12,6 +12,7 @@
 		<local:ViewModel/>
 	</Window.DataContext>
 	<Window.Resources>
+		<local:ItemIDConverter x:Key="ItemIDConverter"/>
 		<BitmapImage x:Key="Open" UriSource="./resource/Open.png"/>
 		<BitmapImage x:Key="Save" UriSource="./resource/Save.png"/>
 	</Window.Resources>
@@ -80,6 +81,20 @@
 						<TextBox Grid.Row="3" Grid.Column="1" Text="{Binding ElementName=CharactorList, Path=SelectedItem.RawMP, UpdateSourceTrigger=PropertyChanged}"/>
 					</Grid>
 				</Grid>
+			</TabItem>
+			<TabItem Header="Item">
+				<ListBox ItemsSource="{Binding Items}">
+					<ListBox.ItemTemplate>
+						<DataTemplate>
+							<StackPanel Orientation="Horizontal">
+								<Label Content="Count "/>
+								<TextBox Text="{Binding Count, UpdateSourceTrigger=PropertyChanged}" Width="80"/>
+								<Label Content=" Name "/>
+								<Label Content="{Binding ID, Converter={StaticResource ItemIDConverter}}"/>
+							</StackPanel>
+						</DataTemplate>
+					</ListBox.ItemTemplate>
+				</ListBox>
 			</TabItem>
 		</TabControl>
 	</DockPanel>
