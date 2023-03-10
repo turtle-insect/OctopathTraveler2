@@ -27,6 +27,11 @@ namespace OctopathTraveler2
 				UEProperty property = mGVAS.Key("ItemId");
 				return SaveData.Instance().ReadNumber(property.Address, property.Size);
 			}
+			set
+			{
+				UEProperty property = mGVAS.Key("ItemId");
+				SaveData.Instance().WriteNumber(property.Address, property.Size, value);
+			}
 		}
 
 		public uint Count
