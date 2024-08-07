@@ -12,7 +12,7 @@ https://ec.nintendo.com/JP/ja/titles/70010000058127
 
 # 実行に必要
 * Windows マシン
-* [.NET 7](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)の導入
+* [.NET 8](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)の導入
 * セーブデータの吸い出し
 * セーブデータの書き戻し
 
