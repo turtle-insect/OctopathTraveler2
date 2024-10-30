@@ -7,7 +7,7 @@
         mc:Ignorable="d"
 		WindowStartupLocation="CenterScreen"
         AllowDrop="True" Drop="Window_Drop" PreviewDragOver="Window_PreviewDragOver"
-        Title="MainWindow" Height="500" Width="700">
+        Title="OctopathTraveler2 Switch SaveDate Editor" Height="500" Width="700">
 	<Window.DataContext>
 		<local:ViewModel/>
 	</Window.DataContext>
