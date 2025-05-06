@@ -1,5 +1,8 @@
 ![DL Count](https://img.shields.io/github/downloads/turtle-insect/OctopathTraveler2/total.svg)
 
+# recommendation
+https://github.com/turtle-insect/GvasViewer
+
 # 概要
 Switch オクトパストラベラーのセーブデータ編集Tool
 
